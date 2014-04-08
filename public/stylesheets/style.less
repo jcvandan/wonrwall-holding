@@ -1,0 +1,82 @@
+@import "fonts.less";
+
+// variables
+@pageWidth:1000px;
+@breakBarHeight:34px;
+@darkPurple:#533149;
+@burgundy:#23060A;
+
+.abs {
+	position:absolute;
+}
+
+.inner {
+	width:@pageWidth;
+	margin:auto;
+}
+
+.transition {	
+	-o-transition: all 0.25s ease-in-out;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+// mixins
+.fullWidthImage {
+	z-index:-1;
+}
+
+// layout
+body {
+	overflow-x:hidden;
+	background-color: #84ACAB;
+	padding-bottom:100px;
+}
+
+div#content {
+	margin:0 auto;
+	font-family:'gotham',helvetica,sans-serif;
+}
+
+// sections
+section#topLogoArea {
+	height: 701px;
+
+	h1 {
+		display:none;
+	}
+
+	img#topBg {
+		.fullWidthImage;
+		position: absolute;
+		min-width: 1600px;
+	}
+
+	p {
+		color: @darkPurple;
+		font-size:24px;
+		line-height:1.4;
+		text-align: center;
+		width:750px;
+		margin:auto;
+		margin-bottom:50px;
+
+		&.white {
+			color:#fff;
+		}
+	}
+
+	div#logoImageContainer {
+		padding-top:50px;
+
+		img {
+			display: block;
+			margin:auto;
+
+			&#logo {
+				margin-bottom: 50px;
+			}
+		}		
+	}
+}
