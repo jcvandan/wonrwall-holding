@@ -30,9 +30,16 @@ div#content {
   margin: 0 auto;
   font-family: 'gotham', helvetica, sans-serif;
 }
+
 section#topLogoArea {
   height: 701px;
 }
+
+section#topLogoArea a {
+  color: inherit;
+  text-decoration: none;
+}
+
 section#topLogoArea h1 {
   display: none;
 }
